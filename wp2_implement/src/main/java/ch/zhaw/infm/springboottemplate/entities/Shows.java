@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 public class Shows extends TemporalEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long showsId;
+    private long id;
 
     private LocalDateTime startTime;
     @ManyToOne
@@ -15,12 +15,12 @@ public class Shows extends TemporalEntity {
     @ManyToOne
     private Performance performance;
 
-    public long getShowsId() {
-        return showsId;
+    public long getId() {
+        return id;
     }
 
-    public void setShowsId(long showId) {
-        this.showsId = showId;
+    public void setId(long showId) {
+        this.id = showId;
     }
 
     public LocalDateTime getStartTime() {

@@ -9,17 +9,17 @@ import javax.persistence.Id;
 public class Event extends TemporalEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long eventId;
+    private long id;
 
     private String name;
     private String location;
 
-    public long getEventId() {
-        return eventId;
+    public long getId() {
+        return id;
     }
 
-    public void setEventId(long eventId) {
-        this.eventId = eventId;
+    public void setId(long eventId) {
+        this.id = eventId;
     }
 
     public String getName() {

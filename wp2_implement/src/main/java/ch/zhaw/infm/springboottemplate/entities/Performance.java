@@ -7,16 +7,16 @@ public class Performance extends TemporalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long performanceId;
+    private long id;
 
     private String performer;
 
-    public long getPerformanceId() {
-        return performanceId;
+    public long getId() {
+        return id;
     }
 
-    public void setPerformanceId(long performanceId) {
-        this.performanceId = performanceId;
+    public void setId(long performanceId) {
+        this.id = performanceId;
     }
 
     public String getPerformer() {
