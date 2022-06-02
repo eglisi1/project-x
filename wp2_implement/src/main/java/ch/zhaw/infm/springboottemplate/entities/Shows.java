@@ -4,23 +4,33 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class Shows extends TemporalEntity {
+public class Shows {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long showsId;
 
+    private String title;
     private LocalDateTime startTime;
     @ManyToOne
+    @JoinColumn(name = "eventId")
     private Event event;
     @ManyToOne
     private Performance performance;
 
-    public long getId() {
-        return id;
+    public long getShowsId() {
+        return showsId;
     }
 
-    public void setId(long showId) {
-        this.id = showId;
+    public void setShowsId(long showId) {
+        this.showsId = showId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public LocalDateTime getStartTime() {

@@ -6,20 +6,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Event extends TemporalEntity{
+public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long eventId;
 
     private String name;
     private String location;
 
-    public long getId() {
-        return id;
+    public long getEventId() {
+        return eventId;
     }
 
-    public void setId(long eventId) {
-        this.id = eventId;
+    public void setEventId(long eventId) {
+        this.eventId = eventId;
     }
 
     public String getName() {

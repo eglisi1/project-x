@@ -3,7 +3,9 @@ package ch.zhaw.infm.springboottemplate.entities;
 import javax.persistence.*;
 
 @Entity
-public class Performance extends TemporalEntity {
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="dtype", discriminatorType = DiscriminatorType.STRING)
+public class Performance {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,13 +1,16 @@
 package ch.zhaw.infm.springboottemplate.entities;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
+@DiscriminatorValue("trick")
 public class Trick extends Performance {
     private double budget;
+
+    public Trick() {
+        super();
+    }
 
     public double getBudget() {
         return budget;
