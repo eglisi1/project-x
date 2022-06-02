@@ -9,13 +9,13 @@ ORDER BY event_id;
 
 -- query 2: edge list
 SELECT 
-    d1.warehouse_id AS lhs, d2.warehouse_id AS rhs
+    s1.event_id AS lhs, s2.event_id AS rhs
 FROM
-    drone d1,
-    drone d2
+    shows s1,
+    shows s2
 WHERE
-    d1.flight_plan_id = d2.flight_plan_id
-        AND d1.warehouse_id < d2.warehouse_id
+    s1.performance_id = s2.performance_id
+        AND s1.shows_id < s2.shows_id
 ;
 
 -- query 2: edge list
