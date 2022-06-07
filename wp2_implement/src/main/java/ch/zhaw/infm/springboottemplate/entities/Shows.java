@@ -17,8 +17,8 @@ public class Shows {
     @ManyToOne
     private Performance performance;
 
-    public void setShowsId(long showId) {
-        this.showsId = showId;
+    public Long getShowsId() {
+        return showsId;
     }
 
     public String getTitle() {
