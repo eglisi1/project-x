@@ -18,10 +18,6 @@ public class Event {
         return eventId;
     }
 
-    public void setEventId(long eventId) {
-        this.eventId = eventId;
-    }
-
     public String getName() {
         return name;
     }

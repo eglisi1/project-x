@@ -17,10 +17,6 @@ public class Performance {
         return id;
     }
 
-    public void setId(long performanceId) {
-        this.id = performanceId;
-    }
-
     public String getPerformer() {
         return performer;
     }

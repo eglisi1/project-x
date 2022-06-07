@@ -3,7 +3,6 @@ package ch.zhaw.infm.springboottemplate.repositories;
 import ch.zhaw.infm.springboottemplate.entities.Event;
 import ch.zhaw.infm.springboottemplate.views.NodeView;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
